@@ -70,7 +70,7 @@ public class MobilePurchase {
 	    Map<String, String> asMap =dataTable.asMap();
 	    WebElement search = driver.findElement(By.name("q"));
 	    search.sendKeys(asMap.get("Phone1"),Keys.ENTER);
-	    System.out.println("Searched for Samsung");
+	    System.out.println("Searched for Mobiles");
 	    WebElement prod = driver.findElement(By.xpath("(//div[contains(text(),'"+asMap.get("Phone1")+"')])[2]"));
 	    prod.click();
 	}
